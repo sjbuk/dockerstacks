@@ -9,7 +9,6 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-      labels: 
       update_config:
         parallelism: 1
         delay: 10s
@@ -22,3 +21,4 @@ networks:
 volumes:
   prometheus:
     external: true
+    
